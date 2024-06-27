@@ -7,7 +7,7 @@ public class AssignmentMain {
 	{
 Manager ob=new Manager();
 		
-		ob.setName("Veena");
+		ob.setName("nidhi");
 		ob.setManagerid(14);
 		ob.setSalary(125000);
 		
@@ -16,7 +16,7 @@ Manager ob=new Manager();
 	{
 		Developer obj=new Developer();
 		
-		obj.setName("Raki");
+		obj.setName("Rahul");
 		obj.setDeveloperid(15);
 		obj.setSalary(200000);
 		
