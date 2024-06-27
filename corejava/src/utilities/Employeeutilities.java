@@ -1,21 +1,16 @@
-package com.rakshitha.assignment.utilities;
+package utilities;
 
-import java.util.List;
-import com.rakshitha.assignment.employees.Employee;
-
+import employees.Employee;
 
 public class Employeeutilities {
-	 public static double calculateTotalSalary(List<Employee> employees) {
-	        double total = 0;
-	        for (Employee e : employees) {
-	            total += e.getSalary();
-	        }
-	        return total;
-	    }
-	 public static void printEmployeeDetails(List<Employee> employees) {
-	        for (Employee e : employees) {
-	            System.out.println("Name: " + e.getName() + ", ID: " + e.getEmployeeId() + ", Salary: " + e.getSalary());
-	        }
-	    }
+	public static void main(String args[])
+	{
+		Employee ob=new Employee();
+		
+		ob.setName("Anand");
+		ob.setEmployeeid(98);
+		ob.setSalary(750000);
+		System.out.println(ob);
+		
 	}
-
+}

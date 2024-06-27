@@ -1,27 +1,28 @@
-package com.rakshitha.assignment;
+package utilities;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.rakshitha.assignment.employees.Developer;
-import com.rakshitha.assignment.employees.Employee;
-import com.rakshitha.assignment.employees.Manager;
-import com.rakshitha.assignment.utilities.EmployeeUtilities;
-
+import employees.Developer;
+import employees.Manager;
 public class AssignmentMain {
-	public static void main(String[] args) {
-		 Manager manager = new Manager("Alice", 101, 90000, "HR");
-	        Developer developer = new Developer("Bob", 102, 80000, "Java");
+	public static void main(String args[])
+	{
+Manager ob=new Manager();
+		
+		ob.setName("Veena");
+		ob.setManagerid(14);
+		ob.setSalary(125000);
+		
+		System.out.println(ob);
+    }
+	{
+		Developer obj=new Developer();
+		
+		obj.setName("Raki");
+		obj.setDeveloperid(15);
+		obj.setSalary(200000);
+		
+		System.out.println(obj);
+		}
+	}
 
-	        List<Employee> employees = new ArrayList<>();
-	        employees.add(manager);
-	        employees.add(developer);
 
-	        EmployeeUtilities.printEmployeeDetails(employees);
-	        double totalSalary = EmployeeUtilities.calculateTotalSalary(employees);
-	        System.out.println("Total Salary: " + totalSalary);
-	    }
-}
 
-	
-	
